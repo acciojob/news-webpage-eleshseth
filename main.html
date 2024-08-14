@@ -1,16 +1,114 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f5f5f5; /* Background color for the body */
+    }
+
+    .header {
+      background-color: #011e29; /* Background color for the header */
+      color: #fff; /* White text color for contrast */
+      padding: 20px 0; /* Padding for top and bottom */
+      text-align: center; /* Center align text */
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+		
+    }
+
+    .section {
+      /* border: 1px solid #ccc; */
+		background-color: #fff;
+      padding: 20px;
+      width: 300px;
+		font-size:14px;
+		height: 240px;
+		box-sizing: border-box;
+		border-radius: 30px
+    }
+	  .sect {
+		background-color: #fff;
+      padding: 20px;
+      width: 180px;
+		font-size:14px;
+		height: 400px;
+		box-sizing: border-box;
+		border-radius: 30px
+	  }
+
+    .latest-news-section {
+		background-color: #fff; /* Background color for the latest news section */
+	    padding: 10px; /* Padding inside the section */
+	    width: 210px; /* Full width of the section */
+		height: 170px;
+		font-size: 15px;
+	    box-sizing: border-box;
+		border-radius: 30px/* Includes padding in the width */
+    }
+
+    .latest-news {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .latest-news li {
+      margin-bottom: 10px; /* Space between list items */
+    }
+
+    /* .main-article {
+      /* text-align: center; */
+    /* }  */
+	  .pictorial-news-section {
+  text-align: center;
+  /* other styles */
+}
+
+    .pictorial-news img { 
+		width:120px;
+		text-align: start;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <header class="header">
+    <h1>Shaw's News</h1>
+  </header>
 
+  <div class="container">
+    <div class="latest-news-section">
+      <h3>Latest News Articles</h3>
+      <ul class="latest-news">
+        <li>Article 1</li>
+        <li>Article 2</li>
+        <li>Article 3</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Main Article</h2>
+      <p class="main-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.</p>
+    </div>
+
+    <div class="sect">
+      <h3 class="pictorial-news-section">Pictorial News</h3>
+      <div class="pictorial-news">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image 1">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image 2">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image 3"
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
